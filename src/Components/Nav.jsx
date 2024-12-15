@@ -85,7 +85,7 @@ function Nav() {
 
           
             <div 
-                className={`absolute top-[23%] left-0 -z-10 w-full bg-[#07294D] text-white px-4 py-4 transition-all duration-500 ease-in${isSidebarOpen ? 'transform translate-y-0  opacity-100' : 'transform -translate-y-full -top-[100%] h-0 opacity-0 '}`}
+                className={`absolute top-[20%] left-0 -z-10 w-full bg-[#07294D] text-white px-4 py-4 transition-all duration-500 ease-in${isSidebarOpen ? 'transform translate-y-0  opacity-100' : 'transform -translate-y-full -top-[100%] h-0 opacity-0 '}`}
             >
                 {isSidebarOpen && (
                     <ul className='space-y-4'>
