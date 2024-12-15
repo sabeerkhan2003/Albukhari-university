@@ -58,7 +58,7 @@ function Nav() {
                 </div>
             </div>
 
-            <div className='flex bg-white justify-center gap-[12%] items-center pt-0 h-[70px] lg:flex lg:justify-center md:mx-10 lg:mx-0  lg:w-full md:gap-[5%] lg:gap-x-[8%] xl:gap-[18%] lg:items-center lg:mt- fixed z-40 md:top-44 top-16  lg:top-36 '>
+            <div className='flex bg-white justify-center gap-[12%] items-center pt-0 h-[70px] lg:flex lg:justify-center md:mx-10 lg:mx-0  lg:w-full md:gap-[5%] lg:gap-x-[8%] xl:gap-[18%] lg:items-center lg:mt- fixed z-40 md:top-44 top-20  lg:top-36 '>
                 <img src={logo} alt="logo" className='w-[70%] md:w-[350px] lg:w-[300px]' />
 
 
