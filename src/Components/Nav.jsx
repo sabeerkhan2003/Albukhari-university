@@ -58,8 +58,8 @@ function Nav() {
                 </div>
             </div>
 
-            <div className='flex bg-white justify-center gap-[13%] items-center pt-5 lg:flex lg:justify-center md:mx-10 lg:mx-0  lg:w-full md:gap-[5%] lg:gap-x-[8%] xl:gap-[18%] lg:items-center lg:mt- fixed z-40 pb-2 md:top-48 lg:top-28 xl:top-[18%]'>
-                <img src={logo} alt="logo" className='w-[65%] md:w-[350px] lg:w-[300px]' />
+            <div className='flex bg-white justify-center gap-[12%] items-center pt-5 h-24 lg:flex lg:justify-center md:mx-10 lg:mx-0  lg:w-full md:gap-[5%] lg:gap-x-[8%] xl:gap-[18%] lg:items-center lg:mt- fixed z-40 pb-2 md:top-48 lg:top-28 xl:top-[18%]'>
+                <img src={logo} alt="logo" className='w-[70%] md:w-[350px] lg:w-[300px]' />
 
 
                 <span className='hidden md:flex md:flex-wrap lg:flex-wrap md:items-center lg:flex lg:text-[14px] lg:font-semibold text-blue-900 lg:mx-0 lg:justify-center  md:gap-y-2 md:gap-x-[4.5%]'>
@@ -85,7 +85,7 @@ function Nav() {
 
           
             <div 
-                className={`absolute top-[25%] left-0 -z-10 w-full bg-[#07294D] text-white px-4 py-4 transition-all duration-500 ease-in${isSidebarOpen ? 'transform translate-y-0  h-fit opacity-100' : 'transform -translate-y-full -top-[100%] h-0 opacity-0 '}`}
+                className={`absolute top-[25%] left-0 -z-10 w-full bg-[#07294D] text-white px-4 py-4 transition-all duration-500 ease-in${isSidebarOpen ? 'transform translate-y-0  opacity-100' : 'transform -translate-y-full -top-[90%] h-0 opacity-0 '}`}
             >
                 {isSidebarOpen && (
                     <ul className='space-y-4'>
