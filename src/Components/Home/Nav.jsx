@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Icon } from "@iconify/react";
-import logo from "../assets/Navbar/logo.png";
+import logo from "../../assets/Navbar/logo.png";
 
 function Nav() {
     const sidebar = [
@@ -58,8 +58,8 @@ function Nav() {
                 </div>
             </div>
 
-            <div className='flex bg-white justify-center gap-[12%] items-center pt-0 h-[70px] lg:flex lg:justify-center md:mx-10 lg:mx-0  lg:w-full md:gap-[5%] lg:gap-x-[8%] xl:gap-[18%] lg:items-center lg:mt- fixed z-40 md:top-44 top-20  lg:top-36 '>
-                <img src={logo} alt="logo" className='w-[70%] md:w-[350px] lg:w-[300px]' />
+            <div className='flex bg-white justify-center gap-[12%] items-center pt-0 h-[70px] lg:flex lg:justify-center md:mx-10 lg:mx-0  lg:w-full md:gap-[5%] lg:gap-x-[8%] xl:gap-[18%] lg:items-center lg:mt- fixed z-40 md:top-44 top-16  lg:top-36 '>
+                <img src={logo} alt="logo" className='w-[70%] md:w-[350px] lg:w-[300px] ' />
 
 
                 <span className='hidden md:flex md:flex-wrap lg:flex-wrap md:items-center lg:flex lg:text-[14px] lg:font-semibold text-blue-900 lg:mx-0 lg:justify-center   md:gap-y-2 md:gap-x-[4.5%]'>
@@ -85,7 +85,7 @@ function Nav() {
 
           
             <div 
-                className={`absolute top-[20%] left-0 -z-10 w-full bg-[#07294D] text-white px-4 py-4 transition-all duration-500 ease-in${isSidebarOpen ? 'transform translate-y-0  opacity-100' : 'transform -translate-y-full -top-[100%] h-0 opacity-0 '}`}
+                className={`absolute top-[147px]  left-0 -z-10 w-full bg-[#07294D] text-white px-4 py-4 transition-all duration-500 ease-in${isSidebarOpen ? 'transform translate-y-0  opacity-100' : 'transform -translate-y-full -top-[100%] h-0 opacity-0 '}`}
             >
                 {isSidebarOpen && (
                     <ul className='space-y-4'>
