@@ -4,7 +4,7 @@ import main from "../../assets/hero/main.jpeg"
 function Hero() {
     return (
         <>
-            <div className='mt-44 md:mt-80 lg:mt-24 mx-5'>
+            <div className=' mt-24 md:mt-80 lg:mt-[20%] pt-10 mx-5 text-white'>
                 <img src={main} alt="B.S Abdul Rahman" className='w-64 mx-auto' />
 
                 <p className=' mt-10'>Kilakarai Bukhari Aalim Arabic College was established in 2000 fulfilling the dream of its founder Alhaj Dr. B.S.Abdur Rahman who wished to start an Arabic college where Islamic religious studies and modern curriculum are taught together.</p>
