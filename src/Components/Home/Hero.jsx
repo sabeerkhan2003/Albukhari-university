@@ -4,7 +4,7 @@ import main from "../../assets/hero/main.jpeg"
 function Hero() {
     return (
         <>
-            <div className='mt-44 lg:mt-60 mx-5'>
+            <div className='mt-44 md:mt-80 lg:mt-24 mx-5'>
                 <img src={main} alt="B.S Abdul Rahman" className='w-64 mx-auto' />
 
                 <p className=' mt-10'>Kilakarai Bukhari Aalim Arabic College was established in 2000 fulfilling the dream of its founder Alhaj Dr. B.S.Abdur Rahman who wished to start an Arabic college where Islamic religious studies and modern curriculum are taught together.</p>
@@ -21,7 +21,7 @@ function Hero() {
                 <h2  className='font-semibold mt-10 text-lg'>Admission</h2>
                 <p className='mt-2'>Application forms are issued during the month of April every year. After scrutinizing the filled-in applications, students are called for an Entrance examination. Results of the Entrance test, Quran recitation test and 10th standard marks are taken into consideration for selection. Admission will be given only on the basis of merit.</p>
                 <h2 className='font-semibold mt-10 text-lg'>Qualification for Admission :</h2>
-                <ul className='list-disc ml-5 mt-2 flex flex-col gap-2'>
+                <ul className='list-disc ml-5 mt-2 flex flex-col gap-2 pb-5'>
                 <li>A pass certificate in S.S.L.C / Matriculation or any other equivalent examination.</li>
                 <li>Ability to recite the Holy Quran.</li>
                 <li>Upper age limit is 17 years.</li></ul>

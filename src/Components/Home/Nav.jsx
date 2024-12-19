@@ -18,6 +18,7 @@ function Nav() {
 
     const handleSidebarToggle = () => {
         setIsSidebarOpen(!isSidebarOpen);
+        
     };
 
     return (
@@ -29,7 +30,7 @@ function Nav() {
                 <Icon icon="entypo-social:instagram-with-circle" className='h-[28px] w-[28px] lg:h-[35px] lg:w-[35px] text-white  rounded-full ' />
             </section>
 
-            <div className='bg-[#07294D] text-white p-2 lg:flex lg:items-center lg:justify-around lg:h-28 xl:h-28 hidden md:flex  md:items-center z-[100] md:w-full md:fixed md:top-10 lg:top-0 fixed'>
+            <div className='bg-[#07294D] text-white p-2 lg:flex lg:items-center lg:justify-around lg:h-28 xl:h-28 hidden md:flex  md:items-center z-[100] md:w-full md:fixed md:top-10 lg:top-0 fixed lg:static'>
                 <div className='lg:flex lg:justify-center md:flex md:items-center lg:gap-5'>
                     <div className='flex flex-col items-center p-4 gap-2 md:'>
                         <span className='flex items-center gap-2'>
@@ -58,11 +59,11 @@ function Nav() {
                 </div>
             </div>
 
-            <div className='flex bg-white justify-center gap-[12%] items-center py-16 lg:py-10 h-[70px] lg:flex lg:justify-center md:mx-10 lg:mx-0  lg:w-full md:gap-[5%] lg:gap-x-[8%] xl:gap-[18%] lg:items-center lg:mt- fixed z-40 md:top-[30%] top-12  lg:top-32 '>
-                <img src={logo} alt="logo" className='w-[70%] md:w-[350px] lg:w-[300px] ' />
+            <div className='flex bg-white justify-center gap-[12%] items-center py-16 lg:py-16 h-[70px] lg:flex lg:justify-center md:mx-5 lg:mx-0 md:w-full   lg:w-full md:gap-[5%] lg:gap-x-[10%] xl:gap-x-[18%] lg:items-center lg:sticky fixed z-40 md:top-[30%] top-12  lg:top-0 lg:shadow-lg'>
+                <img src={logo} alt="logo" className='w-[70%] md:w-[280px] lg:w-[320px]' />
 
 
-                <span className='hidden md:flex md:flex-wrap lg:flex-wrap md:items-center lg:flex lg:text-[14px] lg:font-semibold text-blue-900 lg:mx-0 lg:justify-center   md:gap-y-2 md:gap-x-[4.5%]'>
+                <span className='hidden md:flex md:flex-wrap lg:flex-wrap md:items-center lg:flex lg:text-[14px] lg:font-semibold text-blue-900 lg:mx-0 lg:justify-center  md:gap-y-2 md:gap-x-[4.5%]'>
                     <p className='text-center'>Al-Bukhari</p>
                     <p>Home</p>
                     <p>About Us</p>
@@ -85,7 +86,7 @@ function Nav() {
 
           
             <div 
-                className={`absolute z-50 top-[160px]  left-0  w-full bg-[#07294D] text-white px-4 py-4 transition-all duration-500 ease-in${isSidebarOpen ? 'transform translate-y-0  opacity-100' : 'transform -translate-y-full -top-[100%] h-0 opacity-0 '}`}
+                className={`sticky z-50 top-[160px]   left-0  w-full bg-[#07294D] text-white px-4 py-4 transition-all duration-500 ease-in${isSidebarOpen ? 'transform translate-y-0  opacity-100' : 'transform -translate-y-full -top-[100%] h-0 opacity-0 '}`}
             >
                 {isSidebarOpen && (
                     <ul className='space-y-4'>
