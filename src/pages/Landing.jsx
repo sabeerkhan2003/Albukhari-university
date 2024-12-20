@@ -4,6 +4,7 @@ import Nav from '../Components/Home/Nav'
 import { ImagesSliderDemo } from '../Components/Home/Bg_Carousel'
 import Hero from '../Components/Home/Hero'
 import Nav2 from '../Components/Home/Nav2'
+import Endline from '../Components/Home/Endline'
 
 function Landing() {
   return (
@@ -12,6 +13,7 @@ function Landing() {
         <Nav2/>
         {/* <ImagesSliderDemo/> */}
         <Hero/>
+        <Endline/>
         
     </div>
   )
