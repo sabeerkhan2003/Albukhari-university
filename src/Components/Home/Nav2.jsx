@@ -24,7 +24,7 @@ function Nav2() {
   return (
     <>
     {/* <div className=' bg-blue-600 h-24 w-full opacity-20'></div> */}
-    <div className='flex justify-center gap-[12%] items-center py-14 lg:py-12 md:px-10  lg:mt-0 h-3 lg:h-5  lg:flex lg:justify-center  md:w-full  lg:w-full md:gap-[8%] lg:gap-x-[10%] xl:gap-x-[18%] lg:items-center sticky z-40 md:top-[30%] top-12  lg:top-0  '>
+    <div className='flex bg-white lg:bg-transparent justify-center gap-[12%] items-center py-14 lg:py-14 md:px-10  lg:mt-0 h-3 lg:h-5  lg:flex lg:justify-center  md:w-full  lg:w-full md:gap-[8%] lg:gap-x-[10%] xl:gap-x-[18%] lg:items-center sticky z-40 md:top-[30%] top-12  lg:top-0  '>
                 <img src={logo} alt="logo" className='w-[70%] md:w-[250px] lg:w-[300px]' />
 
 

@@ -10,7 +10,8 @@ function Landing() {
     <div>
         <Nav/>
         <Nav2/>
-        <ImagesSliderDemo/>
+        {/* <ImagesSliderDemo/> */}
+        <Hero/>
         
     </div>
   )
