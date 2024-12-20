@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { Icon } from "@iconify/react";
 
 import Nav2 from './Nav2';
+import Hero from './Hero';
 
 function Nav() {
     return (
@@ -42,7 +43,10 @@ function Nav() {
                 </div>
             </div>
 
-            <Nav2 />
+            
+          {/* <Hero/> */}
+      
+            
 
         </>
     );

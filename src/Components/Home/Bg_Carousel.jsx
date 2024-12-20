@@ -13,6 +13,8 @@ import Image6 from "../../assets/Image_slider/read.jpeg"
 import Image7 from "../../assets/Image_slider/sports.jpeg"
 import Image8 from "../../assets/Image_slider/library.jpeg"
 import Hero from "./Hero";
+import Nav2 from "./Nav2";
+import { div } from "framer-motion/client";
 
 export function ImagesSliderDemo() {
   const [images, setImages] = useState([Image1,Image2, Image3, Image4,Image5, Image6, Image7,Image8]);
@@ -22,8 +24,10 @@ export function ImagesSliderDemo() {
   };
 
   return (
-    <div>
-      <ImagesSlider className="h-[50rem] sticky inset-0 bg-gradient-to-t from-blue-900 via-blue-500 to-blue-300 opacity-75" images={images}>
+    <>
+    {/* <div className="bg-blue-900"></div> */}
+    <div className="">
+      <ImagesSlider className="h-[40rem]  " images={images}>
         <motion.div
           initial={{
             opacity: 0,
@@ -38,12 +42,16 @@ export function ImagesSliderDemo() {
           }}
           className="z-50 flex flex-col justify-center items-center"
         >
+          {/* <Nav2/> */}
           
-          <Hero/>
+          {/* <Hero/> */}
+  
+          
 
 
         </motion.div>
       </ImagesSlider>
     </div>
+    </>
   );
 }
