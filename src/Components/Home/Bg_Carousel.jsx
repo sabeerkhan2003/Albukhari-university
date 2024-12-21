@@ -5,7 +5,7 @@ import { ImagesSlider } from "../ui/images-slider";
 
 // Importing local images
 import Image1 from "../../assets/Image_slider/building.jpeg";
-import Image2 from "..//../assets/Image_slider/Auditorium.jpeg";
+import Image2 from "../../assets/Image_slider/Auditorium.jpeg";
 import Image3 from "../../assets/Image_slider/Guest.jpeg";
 import Image4 from "../../assets/Image_slider/staffs.jpeg"
 import Image5 from "../../assets/Image_slider/lab.jpeg"
