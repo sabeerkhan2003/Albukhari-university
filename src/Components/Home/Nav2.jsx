@@ -65,11 +65,11 @@ function Nav2() {
 />
 </div>
 <div 
-    className={`sticky z-50 top-40 left-0 w-full bg-[#07294D] text-white px-4 transition-all duration-1000 ease-in-out ${
-        isSidebarOpen ? 'translate-y-0 opacity-100 max-h-screen py-4' : '-translate-y-full opacity-0 max-h-0'
+    className={`sticky z-50 top-40 left-0 w-full bg-[#07294D] text-white px-4 transition-all duration-1000 ease ${
+        isSidebarOpen ? 'translate-y-0 opacity-100 max-h-screen py-4' : 'translate-y-[20px] opacity-0 max-h-0'
     }`}
 >
-    <ul className={`space-y-4  transition-opacity duration-1000 ease-in-out ${isSidebarOpen ? 'opacity-100' : 'opacity-0'}`}>
+    <ul className={`space-y-4  transition-opacity duration-100 ease ${isSidebarOpen ? 'opacity-100' : 'opacity-0'}`}>
         {items.map((item, index) => (
             <li key={index} className="hover:text-yellow-300">
                 {item.title}
