@@ -8,7 +8,7 @@ function Nav2() {
     const items = [
         { title: "Home" },
         { title: "About Us",subPages:["Management","Facilities"] },
-        { title: "Academic",subPages:["Faculty,Academic Programme","Admission"] },
+        { title: "Academic",subPages:["Faculty","Academic Programme","Admission"] },
         { title: "Courses",Subpages:["Arabic Application","Translation Class"] },
         { title: "News & Even" },
         { title: "SAIS" },
