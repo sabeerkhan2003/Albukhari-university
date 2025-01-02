@@ -11,7 +11,7 @@ export default {
   theme: {
     extend: {
       animation: {
-        slideDown: 'slideDown 5s linear infinite',
+        slideDown: 'slideDown 20s linear infinite',
       },
       keyframes: {
         slideDown: {

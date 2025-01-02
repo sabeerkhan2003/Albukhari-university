@@ -43,13 +43,16 @@ const heroContent = {
 function Hero() {
     return (
         <>
-            <div className='flex mx-5 lg:mx-14 mt-3 font-opensans md:mt-32 md:gap-10 md:text-[14px] lg:text-[16px] lg:mt-[2%] pt-10'>
+            <div className='flex mx-5 lg:mx-14 mt-0 font-opensans md:mt-32 md:gap-10 md:text-[14px] lg:text-[16px] lg:mt-[2%] pt-10'>
                 <div>
-                    <img
+                    <h3 className='text-[24px] font-semibold lg:my-5'>
+                        WELCOME TO <span className='text-uppercase text-red-500'>Kilakarai Bukhari Aalim Arabic College</span> 
+                    </h3>
+                    {/* <img
                         src={heroContent.intro.image}
                         alt={heroContent.intro.alt}
                         className='w-56 lg:w-64 md:w-44 md:h-52 lg:h-60 mx-auto md:float-left md:mr-8 lg:mb-2'
-                    />
+                    /> */}
                     {heroContent.intro.paragraphs.map((paragraph, index) => (
                         <p key={index} className='mt-10 md:mt-0  md:leading-relaxed'>
                             {paragraph}
