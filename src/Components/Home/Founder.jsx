@@ -1,5 +1,5 @@
 import React from 'react'
-import founder from "../../assets/Founder/principal.jpg"
+import founder from "../../assets/Founder/principal.JPG"
 
 function Founder() {
   return (
