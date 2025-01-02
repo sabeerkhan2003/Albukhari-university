@@ -3,7 +3,7 @@ import founder from "../../assets/hero/main.jpeg"
 
 function Founder() {
   return (
-    <div className='flex justify-center flex-col gap-8 lg:justify-center lg:gap-32  md:flex-row items-center mx-4'>
+    <div className='flex justify-center flex-col gap-8 lg:justify-center mt-16 lg:gap-32  md:flex-row items-center mx-4'>
       <div className='border-8 border-[#07294D]'>
         <img src={founder} alt="principal"  className=' md:w-[300px] lg:w-[420px] lg:border-8 border-[#07294D] lg:p-10 '/></div>
         <div className='flex flex-col gap-2 lg:w-2/4'>

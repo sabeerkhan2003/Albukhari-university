@@ -6,8 +6,8 @@ import journal from "../../assets/Banners/journal.png";
 
 function Banners() {
   return (
-    <div className='bg-[#EDF0F2] md:px-0 md:py-8 py-3'>
-      <div className='flex flex-wrap md:grid md:grid-cols-2  lg:grid-cols-4 px-4 place-content-center place-items-center md:gap-y -10 h-[30vh]'>
+    <div className=' md:px-0 md:py-8 py-3 w-fit'>
+      <div className='flex flex-wrap md:grid md:grid-cols-2  lg:grid-cols-2 px-4 place-content-center place-items-center md:gap-y-10 md:gap-x-1 h-[30vh] lg:h-[48vh] lg:w-fit'>
         <img className='w-[50%] sm:w-full h-[70px] object-contain' src={univ2} alt="univ2" />
         <img className='w-[50%] sm:w-full h-[70px] object-contain' src={school2} alt="school2" />
         <img className='w-[50%] sm:w-full h-[70px] object-contain' src={madrasuniv} alt="madrasuniv" />

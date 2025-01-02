@@ -21,10 +21,10 @@ function Landing() {
         <Nav/>
         {/* <Nav2/> */}
         <ImagesSliderDemo/>
-        <Hero/>
         <Founder/>
+        <Hero/>
         <Events/>
-        <Banners/>
+        {/* <Banners/> */}
         <Footer/>
         <Endline/>
     </div>

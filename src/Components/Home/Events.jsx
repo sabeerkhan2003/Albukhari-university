@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Draggable from 'react-draggable';
+import Banners from './Banners';
 
 function Events() {
   const [activeTab, setActiveTab] = useState('announcements');
@@ -25,7 +26,9 @@ function Events() {
   }, [scrolling]);
 
   return (
-    <div className="flex flex-col m-5 lg:ml-auto items-center border-2 lg:w-1/2">
+    <div className='flex items-center flex-col md:flex-row'>
+    <div><Banners/></div>
+    <div className="flex flex-col m-5  items-center border-2 md:w-1/2">
       {/* Tab Navigation */}
       <div className="flex w-full justify-around bg-orange-100">
         <h1
@@ -115,6 +118,7 @@ function Events() {
           </Draggable>
         )}
       </div>
+    </div>
     </div>
   );
 }
