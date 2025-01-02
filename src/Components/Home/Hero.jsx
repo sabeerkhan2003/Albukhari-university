@@ -8,8 +8,9 @@ const heroContent = {
         alt: "B.S Abdul Rahman",
         paragraphs: [
             "Kilakarai Bukhari Aalim Arabic College was established in 2000 fulfilling the dream of its founder Alhaj Dr. B.S.Abdur Rahman who wished to start an Arabic college where Islamic religious studies and modern curriculum are taught together.",
-            "The college has designed a 5-year integrated academic programme which enables its students to acquire twin degrees, one in Islamic studies and the other in business management. It has become a unique institution that promotes exemplary Muslim scholars (Ulamas) who excel both in revealed knowledge and modern sciences."
-        ]
+            
+        ],
+        paragraphs2:["The college has designed a 5-year integrated academic programme which enables its students to acquire twin degrees, one in Islamic studies and the other in business management. It has become a unique institution that promotes exemplary Muslim scholars (Ulamas) who excel both in revealed knowledge and modern sciences."]
     },
     vision: {
         title: "Our Vision",
@@ -50,12 +51,19 @@ function Hero() {
                         className='w-56 lg:w-64 md:w-44 md:h-52 lg:h-60 mx-auto md:float-left md:mr-8 lg:mb-2'
                     />
                     {heroContent.intro.paragraphs.map((paragraph, index) => (
-                        <p key={index} className='mt-10 md:mt-0 lg:leading-relaxed'>
+                        <p key={index} className='mt-10 md:mt-0  md:leading-relaxed'>
                             {paragraph}
                         </p>
+                        
+                    ))}
+                    {heroContent.intro.paragraphs2.map((paragraph, index) => (
+                        <p key={index} className='mt-10  md:mt-8  md:leading-relaxed'>
+                            {paragraph}
+                        </p>
+                        
                     ))}
 
-                    <div className='md:hidden lg:inline'>
+                    <div className='md:hidden  lg:text-[16px] lg:block'>
                         <h2 className='font-semibold mt-10 text-lg'>{heroContent.vision.title}</h2>
                         <p className='mt-2 lg:leading-relaxed'>{heroContent.vision.description}</p>
 
@@ -69,7 +77,7 @@ function Hero() {
                     </div>
                 </div>
 
-                <div className='hidden md:inline lg:inline'>
+                <div className='hidden md:inline lg:inline  '>
                     <img
                         src={banner}
                         className='lg:h-[700px] lg:w-[1600px] md:h-[400px] md:w-[1500px]'
@@ -78,12 +86,12 @@ function Hero() {
                 </div>
             </div>
 
-            <div className='hidden md:block md:mx-5 lg:mx-14'>
-                <h2 className='font-semibold text-lg'>{heroContent.vision.title}</h2>
-                <p className='mt-2 lg:leading-relaxed'>{heroContent.vision.description}</p>
+            <div className='hidden md:block lg:hidden xl:hidden md:mx-5 lg:mx-14 md:text-[14px] lg:text-[16px] md:leading-relaxed'>
+                <h2 className='font-semibold text-lg '>{heroContent.vision.title}</h2>
+                <p className='mt-2 lg:leading-relaxed md:leading-relaxed'>{heroContent.vision.description}</p>
 
                 <h2 className='font-semibold mt-10 text-lg'>{heroContent.mission.title}</h2>
-                <p className='mt-2'>{heroContent.mission.description}</p>
+                <p className='mt-2 md:leading-relaxed'>{heroContent.mission.description}</p>
                 <ul className='list-disc ml-5 lg:leading-relaxed'>
                     {heroContent.mission.points.map((point, index) => (
                         <li key={index}>{point}</li>
@@ -91,11 +99,11 @@ function Hero() {
                 </ul>
             </div>
 
-            <div className='lg:mx-14 md:mx-5 mx-5'>
-                <h2 className='font-semibold mt-10 text-lg'>{heroContent.facilities.title}</h2>
-                <p className='mt-2'>{heroContent.facilities.description}</p>
+            <div className='lg:mx-14 md:mx-5 mx-5 md:text-[14px] lg:text-[16px] md:leading-relaxed'>
+                <h2 className='font-semibold mt-10 text-lg md:leading-relaxed'>{heroContent.facilities.title}</h2>
+                <p className='mt-2 md:leading-relaxed'>{heroContent.facilities.description}</p>
 
-                <h2 className='font-semibold mt-10 text-lg'>{heroContent.admission.title}</h2>
+                <h2 className='font-semibold mt-10 text-lg md:leading-relaxed'>{heroContent.admission.title}</h2>
                 <p className='mt-2 lg:leading-relaxed'>{heroContent.admission.description}</p>
 
                 <h2 className='font-semibold mt-10 text-lg'>Qualification for Admission:</h2>
@@ -106,7 +114,7 @@ function Hero() {
                 </ul>
             </div>
         </>
-    );
+    ); 
 }
 
 export default Hero;

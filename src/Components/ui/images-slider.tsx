@@ -64,7 +64,7 @@ export const ImagesSlider = ({
     if (autoplay) {
       interval = setInterval(() => {
         handleNext();
-      }, 3000);
+      }, 2000);
     }
 
     return () => {
@@ -128,7 +128,7 @@ export const ImagesSlider = ({
             animate="visible"
             exit={direction === "up" ? "upExit" : "downExit"}
             variants={slideVariants}
-            className="image h-full w-full absolute inset-0 object-cover object-center" />
+            className="image h-full w-full absolute inset-0 object-cover lg:object-fill object-center" />
         </AnimatePresence>
       )}
     </div>)

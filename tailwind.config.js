@@ -9,7 +9,20 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      animation: {
+        slideDown: 'slideDown 5s linear infinite',
+      },
+      keyframes: {
+        slideDown: {
+          '0%': { transform: 'translateY(0)' },
+          '100%': { transform: 'translateY(-100%)' },
+        },
+      },
+      fontFamily: {
+        'opensans': ['Open Sans'],
+      },
+    },
   },
   plugins: [],
 }
