@@ -5,7 +5,7 @@ import Socialicons from './Socialicons'
 function Endline() {
 
   return (<>
-  <div className='lg:hidden -mt-14'>
+  <div className='lg:hidden'>
   {/* <Socialicons/> */}
   </div>
  
