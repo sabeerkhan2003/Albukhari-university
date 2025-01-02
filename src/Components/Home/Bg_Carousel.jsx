@@ -30,7 +30,7 @@ export function ImagesSliderDemo() {
     <>
       <div className="h-[100%] w-full bg-gradient-to-b from-blue-500 to-blue-800 opacity-90 mix-blend-multiply">
       <div className=" opacity-90 ">
-        <ImagesSlider className="h-[45rem]" images={images}>
+        <ImagesSlider className="h-60 md:h-[45rem]" images={images}>
           <motion.div
             initial={{
               opacity: 0,

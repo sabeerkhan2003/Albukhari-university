@@ -3,27 +3,39 @@ import { cn } from "../../lib/utils";
 import { motion, AnimatePresence } from "framer-motion";
 import React, { useEffect, useState } from "react";
 
-export const ImagesSlider = ({
+interface ImagesSliderProps {
+  images: string[];
+  children?: React.ReactNode;
+  overlay?: boolean;
+  overlayClassName?: string;
+  className?: string;
+  autoplay?: boolean;
+  direction?: "up" | "down";
+}
+
+export const ImagesSlider: React.FC<ImagesSliderProps> = ({
   images,
   children,
   overlay = true,
   overlayClassName,
   className,
   autoplay = true,
-  direction = "up"
+  direction = "up",
 }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [loading, setLoading] = useState(false);
-  const [loadedImages, setLoadedImages] = useState([]);
+  const [loadedImages, setLoadedImages] = useState<string[]>([]);
 
   const handleNext = () => {
     setCurrentIndex((prevIndex) =>
-      prevIndex + 1 === images.length ? 0 : prevIndex + 1);
+      prevIndex + 1 === images.length ? 0 : prevIndex + 1
+    );
   };
 
   const handlePrevious = () => {
     setCurrentIndex((prevIndex) =>
-      prevIndex - 1 < 0 ? images.length - 1 : prevIndex - 1);
+      prevIndex - 1 < 0 ? images.length - 1 : prevIndex - 1
+    );
   };
 
   useEffect(() => {
@@ -48,6 +60,7 @@ export const ImagesSlider = ({
       })
       .catch((error) => console.error("Failed to load images", error));
   };
+
   useEffect(() => {
     const handleKeyDown = (event) => {
       if (event.key === "ArrowRight") {
@@ -107,14 +120,15 @@ export const ImagesSlider = ({
   const areImagesLoaded = loadedImages.length > 0;
 
   return (
-    (<div
+    <div
       className={cn(
-        "overflow-hidden h-full w-full relative flex items-center justify-center",
+        "overflow-hidden h-fit w-full relative flex items-center justify-center",
         className
       )}
       style={{
         perspective: "1000px",
-      }}>
+      }}
+    >
       {areImagesLoaded && children}
       {areImagesLoaded && overlay && (
         <div className={cn("absolute inset-0 bg-black/60 z-40", overlayClassName)} />
@@ -128,9 +142,12 @@ export const ImagesSlider = ({
             animate="visible"
             exit={direction === "up" ? "upExit" : "downExit"}
             variants={slideVariants}
-            className="image h-full w-full absolute inset-0 object-cover lg:object-fill object-center" />
+            className="image h-full w-full absolute inset-0 object-cover transform scale-110"
+          />
         </AnimatePresence>
       )}
-    </div>)
+    </div>
   );
 };
+
+export default ImagesSlider;

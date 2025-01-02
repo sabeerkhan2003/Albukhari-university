@@ -9,18 +9,18 @@ const siteMap = [
 
 function Footer() {
     return (
-        <div className='bg-[#07294C] md:px-5 lg:px-16 lg:grid lg:grid-cols-3 items-start'>
+        <div className='bg-[#07294C] md:px-3 lg:px-16 lg:grid lg:grid-cols-3 items-start'>
             <div className='mx-5  flex flex-col gap-3 py-5 md:flex'>
                 <img src={logo} alt="logo" className='w-28 h-28 md:w-36 md:h-36 md:mx-auto xl:mx-0' />
                 <p className='font-opensans text-white lg:w- text-[14px] leading-loose '>
                     KBA Arabic College is a 25-years old educational institution founded in 2000 by Alhaj Dr. B.S Abdur Rahman, a Visionary With a Missionary Zeal and run by the All India Islamic Foundation.
                 </p>
-                <div className='lg:relative pr-40 md:mr-0 lg:mr-[60%]'>
+                <div className='lg:relative pr-44 md:mr-0 md:pr-0 lg:mr-[60%]'>
                     <Socialicons />
                 </div>
             </div>
-            <div className='text-white m-5 lg:p-5 lg:mx-10'>
-                <h2 className='text-[18px] md:text-2xl font-opensans my-8 lg:my-5 '>Sitemap</h2>
+            <div className='text-white mx-5 lg:p-5 lg:mx-10'>
+                <h2 className='text-[18px] md:text-2xl font-opensans mb-8 lg:my-5 '>Sitemap</h2>
                 <ul className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-2 gap-2 mr-16 md:mr-0 lg:mt-12'>
                     {siteMap.map((item, index) => (
                         <li className='flex h-8' key={index}>
@@ -33,11 +33,11 @@ function Footer() {
                 </ul>
             </div>
 
-            <div className='text-white m-5 flex flex-col gap-3 md:gap-6 text-[16px] pb-10 lg:pb-0 lg:p-5 lg:mx-10'>
+            <div className='text-white mx-5 flex flex-col gap-3 md:gap-6 text-[16px] pb-20 lg:pb-0 lg:p-5 lg:mx-0'>
                 <h2 className='text-[18px] font-opensans my-5 md:text-2xl'>Contact Us</h2>
                 <div className='flex md:items-center lg:items-start gap-2 hover:text-[#125B9E]'>
                     <Icon icon="ic:twotone-location-on" width="28" height="28" style={{ color: '#125B9E' }} />
-                    <a href='https://maps.app.goo.gl/NqfMLeiHFmS8kPdr8' className=' w-4/5 md:w-2/4'>KBA Arabic College, Crescent Campus, Vandalur, Chennai - 600 048</a>
+                    <a href='https://maps.app.goo.gl/NqfMLeiHFmS8kPdr8' className=' w-4/5 md:w-2/4 lg:w-full'>KBA Arabic College, Crescent Campus, Vandalur, Chennai - 600 048</a>
                 </div>
                 <div className='flex items-center gap-2 md:gap-4 hover:text-[#125B9E]'>
                     <Icon icon="ic:baseline-settings-phone" width="20" height="20" style={{ color: '#125B9E' }} />
