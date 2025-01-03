@@ -1,6 +1,6 @@
 import React from 'react';
 import main from "../../assets/hero/main.jpeg";
-import banner from "../../assets/hero/Banner.jpg";
+import Banner from './Banner';
 
 const heroContent = {
     intro: {
@@ -45,9 +45,6 @@ function Hero() {
         <>
             <div className='flex mx-5 lg:mx-14 mt-0 font-opensans md:mt-32 md:gap-10 md:text-[14px] lg:text-[16px] lg:mt-[2%] pt-10'>
                 <div>
-                    <h3 className='text-[24px] font-semibold lg:my-5'>
-                        WELCOME TO <span className='text-uppercase text-red-500'>Kilakarai Bukhari Aalim Arabic College</span> 
-                    </h3>
                     {/* <img
                         src={heroContent.intro.image}
                         alt={heroContent.intro.alt}
@@ -80,13 +77,6 @@ function Hero() {
                     </div>
                 </div>
 
-                <div className='hidden md:inline lg:inline  '>
-                    <img
-                        src={banner}
-                        className='lg:h-[700px] lg:w-[1600px] md:h-[400px] md:w-[1500px]'
-                        alt=""
-                    />
-                </div>
             </div>
 
             <div className='hidden md:block lg:hidden xl:hidden md:mx-5 lg:mx-14 md:text-[14px] lg:text-[16px] md:leading-relaxed'>

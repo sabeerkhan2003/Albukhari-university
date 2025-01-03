@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Draggable from 'react-draggable';
-import Banners from './Banners';
+import Banners from './Logos';
+import Banner from './Banner';
 
 function Events() {
   const [activeTab, setActiveTab] = useState('announcements');
@@ -26,9 +27,9 @@ function Events() {
   }, [scrolling]);
 
   return (
-    <div className='flex items-center flex-col md:flex-row'>
-    <div><Banners/></div>
-    <div className="flex flex-col m-5  items-center border-2 md:w-1/2">
+    <div className='flex items-center flex-col md:flex-row md:gap-10 lg:gap-20 md:mx-5 md:my-10'>
+    
+    <div className="flex flex-col m-5 md:m-0  items-center border-2 md:w-1/2">
       {/* Tab Navigation */}
       <div className="flex w-full justify-around bg-orange-100">
         <h1
@@ -50,7 +51,7 @@ function Events() {
       </div>
 
       {/* Tab Content */}
-      <div id="scroll-container" className="h-[50vh] w-full overflow-hidden relative bg-gray-50">
+      <div id="scroll-container" className="h-[50vh] md:h-[65vh] w-full overflow-hidden relative bg-gray-50">
         {activeTab === 'announcements' && (
           <Draggable
             axis="y"
@@ -119,6 +120,7 @@ function Events() {
         )}
       </div>
     </div>
+    <div className='md:w-1/2 lg:w-2/1'><Banner/></div>
     </div>
   );
 }

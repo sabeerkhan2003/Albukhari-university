@@ -14,7 +14,7 @@ import Image7 from "../../assets/Image_slider/sports.jpeg";
 import Image8 from "../../assets/Image_slider/library.jpeg";
 import Nav2 from "./Nav2";
 
-export function ImagesSliderDemo() {
+export function Bg_Carousel() {
   const [images, setImages] = useState([
     Image1,
     Image2,

@@ -7,12 +7,11 @@ function Nav2() {
   const items = [
     { title: "Home" },
     { title: "About Us", subPages: ["Management", "Facilities"] },
-    { title: "Academic", subPages: ["Faculty", "Academic Programme", "Admission"] },
-    { title: "Courses", subPages: ["Arabic Application", "Translation Class"] },
-    { title: "News & Even" },
-    { title: "SAIS" },
-    { title: "Online Class" },
+    { title: "Gallery" },
+    { title: "E-Journal", subPages: ["Faculty", "Academic Programme", "Admission"] },
     { title: "Contact Us" },
+    { title: "Login", subPages: ["Arabic Application", "Translation Class"] },
+    
   ];
 
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -51,7 +50,7 @@ function Nav2() {
     <>
          <div className="md:relative">
       <div
-  className={`md:absolute top-0  z-50 flex justify-center gap-[8%] md:gap-[7%] md:px-10  lg:gap-[15%] xl:gap-36 lg:h-20 w-full md:py-2 items-center py-4 transition-all duration-500 ${
+  className={`md:absolute top-0  z-50 flex justify-center gap-[8%] md:gap-[15%] md:px-10  lg:gap-[15%] xl:gap-56 lg:h-20 w-full md:py-2 items-center py-4 transition-all duration-500 ${
     isScrolled ? "bg-white shadow-md md:h-16" : "bg-white md:bg-transparent top-10"
   }`}
 >
@@ -72,7 +71,7 @@ function Nav2() {
     className="w-[70%] md:hidden object-contain transition-all duration-500"
   />
   <ul
-    className={`hidden md:flex md:items-center gap-8 md:gap-4 lg:gap-10  md:text-[10px] md:w-fit lg:text-[12px] ${
+    className={`hidden md:flex md:items-center gap-8 md:gap-4 lg:gap-16  md:text-[10px] md:w-fit lg:text-[12px] ${
       isScrolled ? "text-[#1C315E] lg:mt-0" : "text-white lg:mt-[20px]"
     } lg:text-sm font-semibold `}
   >
