@@ -5,4 +5,13 @@
 
 
 
-
+@layer components {
+    .swiper-pagination-bullet {
+      @apply w-2 h-2 bg-red-500 opacity-100 !important;
+    }
+    .swiper-pagination-bullet-active {
+      @apply bg-orange-500 !important;
+    }
+  }
+  
+  

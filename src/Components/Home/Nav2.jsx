@@ -6,11 +6,12 @@ import { Icon } from "@iconify/react";
 function Nav2() {
   const items = [
     { title: "Home" },
-    { title: "About Us", subPages: ["Management", "Facilities"] },
+    { title: "About Us" },
+    { title: "Academic ", subPages: ["programs","Faculty", "Admission"] },
     { title: "Gallery" },
-    { title: "E-Journal", subPages: ["Faculty", "Academic Programme", "Admission"] },
+    { title: "E-Journal" },
     { title: "Contact Us" },
-    { title: "Login", subPages: ["Arabic Application", "Translation Class"] },
+   
     
   ];
 

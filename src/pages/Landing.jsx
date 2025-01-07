@@ -10,6 +10,7 @@ import Founder from '../Components/Home/Founder'
 import Events from '../Components/Home/Events'
 import Footer from '../Components/Home/Footer'
 import Logos from '../Components/Home/Logos'
+import EventsSlider from '../Components/Home/Eventslider'
 
 function Landing() {
   return (
@@ -22,11 +23,12 @@ function Landing() {
       <Nav />
       <Bg_Carousel/>
       <Founder />
-      <Events />
       <Hero />
+      <EventsSlider />
       <Logos />
       <Footer />
       <Endline />
+      
     </div>
   )
 }

@@ -1,0 +1,13 @@
+/* Custom Swiper Pagination */
+.swiper-pagination-bullet {
+    width: 2px; /* Smaller size */
+    height: 2px;
+    color: #1dc811;
+    background-color: #1dc811; /* Custom color */
+    opacity: 1; /* Fully visible */
+  }
+  
+  .swiper-pagination-bullet-active {
+    background-color: #ff5722; /* Active bullet color */
+  }
+  
