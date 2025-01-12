@@ -10,7 +10,7 @@ function Admission_button() {
 
   return (
     <button
-      className={`py-3 px-8 bg-[#07294D] text-white font-semibold transform transition-transform duration-200 ${
+      className={`py-3 px-8 bg-[#07294D] text-white font-semibold font-serif transform transition-transform duration-200 ${
         isClicked ? 'scale-110' : ''
       }`}
       onClick={handleClick}

@@ -50,7 +50,7 @@ function Events() {
   }, [scrolling, dragging]);
 
   return (
-    <div className="flex flex-col m-5 lg:ml-auto items-center border-2 sm:w-3/4 md:w-1/2">
+    <div className="flex flex-col m-5 lg:ml-auto items-center border-2 sm:w-3/4 md:w-[450px]">
       {/* Tab Navigation */}
       <div className="flex w-full justify-around bg-[#07294D]">
         <h1 className="cursor-pointer px-2 py-1 sm:px-4 sm:py-2 text-base sm:text-lg font-semibold text-white">
@@ -76,10 +76,10 @@ function Events() {
               {/* Render the events twice to create a seamless scroll */}
               {events.concat(events).map((event, index) => (
                 <div key={index}>
-                  <p className="text-blue-900 text-lg font-medium px-4 py-2">
+                  <p className="text-blue-900 text-sm font-medium px-4 py-2">
                     {event.title}
                   </p>
-                  <p className="text-orange-500 text-sm px-4">
+                  <p className="text-orange-500 text-xs px-4">
                     posted on: {event.postedOn}
                   </p>
                   <hr className="border-dotted border-gray-300 my-2 mx-4" />

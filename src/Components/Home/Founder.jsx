@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import founder from "../../assets/Founder/Founder3.png"
+import founder from "../../assets/hero/main.jpeg"
 import Admission_button from './Admission_button'
 
 function Founder() {
@@ -17,7 +17,7 @@ function Founder() {
     </div>
     <div className='flex justify-center flex-col gap-8 lg:justify-center mt-8 md:gap-16 lg:gap-32  md:flex-row items-center mx-4 lg:mx-24'>
 
-      <div className=' rounded-3xl shadow-2xl  shadow-blue-400'>
+      <div className=' rounded-3xl shadow-2xl  '>
 
       <img 
   src={founder} 
@@ -35,7 +35,7 @@ function Founder() {
         <h2 className='text-[24px] font-semibold'>H.E. Sheikh Abubakr Ahmad</h2>
         <h4 className='text-[15px] text-[#6B6B6B] font-bold'>Founder of Markazu Saquafathi Sunniyya</h4>
         <button
-          className={`py-3 px-8 bg-[#07294D] text-white font-semibold transform transition-transform duration-200 w-fit mx-auto md:mx-0 my-3 ${isClicked ? 'scale-110' : ''
+          className={`py-3 px-8 bg-[#07294D] text-white font-semibold font-serif transform transition-transform duration-200 w-fit mx-auto md:mx-0 my-3 ${isClicked ? 'scale-110' : ''
             }`}
           onClick={handleClick}
         >About</button>

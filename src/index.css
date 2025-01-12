@@ -3,15 +3,35 @@
 @tailwind components;
 @tailwind utilities;
 
+/* .swiper-pagination-bullet{
+    background-color: cadetblue
+} */
 
-
-@layer components {
+/* @layer components {
     .swiper-pagination-bullet {
-      @apply w-2 h-2 bg-red-500 opacity-100 !important;
+      @apply w-8 h-8 bg-red-500 opacity-100 !important;
     }
     .swiper-pagination-bullet-active {
       @apply bg-orange-500 !important;
     }
   }
+   */
   
-  
+/* Swiper Custom Pagination Bullet Styling */
+/* Swiper Custom Pagination Bullet Styling */
+/* Swiper Pagination Bullet Styling */
+.swiper-pagination-bullet {
+  width: 8px;         /* Smaller bullet size */
+  height: 8px;        /* Smaller bullet size */
+  background-color: #007bff;
+  opacity: 0.7;
+  border-radius: 50%;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #0056b3;
+  opacity: 1;
+  transform: scale(1.2);
+}
+
+
