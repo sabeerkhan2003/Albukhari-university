@@ -56,12 +56,12 @@ const EventSlider = () => {
   };
 
   return (
-    <div className="flex flex-col-reverse md:flex-row items-center justify-center gap-10 lg:gap-20 mx-5 lg:mx-36 my-10 md:my-16 lg:my-20">
+    <div className="flex flex-col-reverse md:flex-row items-center justify-center gap-10 lg:gap-20 mx-5 lg:mx-36 my-10 md:my-16 lg:my-20 text-center">
       {/* Slider Section */}
       <Slider {...settings} className="w-full md:w-96 mx-auto [&_.slick-dots]:mt-2 [&_.slick-dots>li]:-mx-1">
         {events.map((event, index) => (
           <div key={index} className="event-slide p-6 bg-white flex flex-col items-center">
-            <img src={event.image} alt={event.name} className="w-32 h-32 object-cover rounded-full mb-4" />
+            <img src={event.image} alt={event.name} className="w-32 h-32 object-cover mx-auto rounded-full mb-4" />
             <h3 className="text-lg font-bold text-gray-800 mb-2">{event.name}</h3>
             <h4 className="text-sm text-gray-500 mb-2">{event.role}</h4>
             <p className="text-sm text-gray-600 text-center">{event.description}</p>
