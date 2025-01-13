@@ -50,7 +50,7 @@ function Announcements() {
   }, [scrolling, dragging]);
 
   return (
-    <div className="flex flex-col m-5 lg:ml-10 items-center border-2 sm:w-3/4 md:w-[300px] lg:w-[530px]">
+    <div className="flex flex-col m-5 lg:ml-10 items-center border-2 sm:w-3/4 md:w-[300px] lg:w-[500px]">
       {/* Tab Navigation */}
       <div className="flex w-full justify-around bg-[#07294D]">
         <h1 className="cursor-pointer px-2 py-1 sm:px-4 sm:py-2 text-base sm:text-lg font-semibold text-white">
