@@ -1,6 +1,7 @@
+import { div } from 'framer-motion/client';
 import React, { useState } from 'react';
 
-function Admission_button() {
+function Admission_button({name}) {
   const [isClicked, setIsClicked] = useState(false);
 
   const handleClick = () => {
@@ -9,14 +10,16 @@ function Admission_button() {
   };
 
   return (
+   
     <button
-      className={`py-3 px-8 bg-[#07294D] text-white font-semibold font-serif transform transition-transform duration-200 ${
+      className={`py-3 px-8 bg-[#07294D] w-fit text-white  font-semibold font-serif transform transition-transform duration-200 ${
         isClicked ? 'scale-110' : ''
       }`}
       onClick={handleClick}
     >
-      Online Admissions
+      {name}
     </button>
+
   );
 }
 

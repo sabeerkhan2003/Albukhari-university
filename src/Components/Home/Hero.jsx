@@ -43,7 +43,7 @@ const heroContent = {
 function Hero() {
     return (
         <>
-            <div className='flex mx-5 lg:mx-14 mt-0 font-opensans md:mt-32 md:gap-10 md:text-[14px] lg:text-[16px] lg:mt-[2%] pt-10'>
+            <div className='flex mx-5 lg:mx-14 -mt-16 font-opensans md:mt-0 md:gap-10 md:text-[14px] lg:text-[16px] lg:mt-[2%] pt-10'>
                 <div>
                     {/* <img
                         src={heroContent.intro.image}

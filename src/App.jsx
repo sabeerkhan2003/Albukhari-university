@@ -1,13 +1,21 @@
+import { BrowserRouter as Router,Route, Routes } from 'react-router-dom';
 import './App.css'
 import Landing from './pages/Landing'
-import { Icon } from "@iconify/react";
+import AboutUs from './pages/AboutUs';
 
 function App() {
+ 
   
 
   return (
     <>
-     <Landing/>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Landing/>} />
+        <Route path="/about" element={<AboutUs/>} />
+      </Routes>
+    </Router>
+     
     </>
   )
 }

@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from "react";
 import logo3 from "../../assets/Navbar/logo3.png";
-import logo1 from "../../assets/Navbar/logo1.png";
+import logo from "../../assets/Navbar/logo.png";
 import { Icon } from "@iconify/react";
+import { Link } from "react-router-dom";
 
-function Nav2() {
+function Nav2({text_color}) {
   const items = [
-    { title: "Home" },
-    { title: "About Us" },
+    { title: <Link to="/">Home</Link> },
+    { title: <Link to="./about">About Us</Link> },
     { title: "Academic ", subPages: ["programs","Faculty", "Admission"] },
     { title: "Gallery" },
     { title: "E-Journal" },
@@ -57,7 +58,7 @@ function Nav2() {
 >
   {/* Logo for medium and larger screens */}
   <img
-    src={isScrolled ? logo1 : logo3}
+    src={isScrolled ? logo : logo3}
     alt="logo"
     className={`w-[70%] md:w-[100px] md:h-[90px] lg:top-20 lg:w-[150px] lg:h-[120px] object-contain transition-all duration-500 ${
       isScrolled
@@ -67,13 +68,13 @@ function Nav2() {
   />
   {/* Logo for small screens */}
   <img
-    src={logo1}
+    src={logo}
     alt="logo"
     className="w-[70%] md:hidden object-contain transition-all duration-500"
   />
   <ul
     className={`hidden md:flex md:items-center gap-8 md:gap-4 lg:gap-16  md:text-[10px] md:w-fit lg:text-[12px] ${
-      isScrolled ? "text-[#1C315E] lg:mt-0" : "text-white lg:mt-[20px]"
+      isScrolled ? `text-[#1C315E] lg:mt-0` : `${text_color} lg:mt-[20px]`
     } lg:text-sm font-semibold `}
   >
     {items.map((item, index) => (

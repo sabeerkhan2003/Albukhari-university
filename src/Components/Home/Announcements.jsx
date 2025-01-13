@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import Draggable from 'react-draggable';
 
-function Events() {
+function Announcements() {
   const [dragging, setDragging] = useState(false);
   const [scrolling, setScrolling] = useState(true);
   const scrollContainerRef = useRef(null);
@@ -39,7 +39,7 @@ function Events() {
       scrollInterval = setInterval(() => {
         if (!dragging) {
           container.scrollBy({ top: 1, behavior: 'smooth' });
-          if (container.scrollTop >= container.scrollHeight / 2) {
+          if (container.scrollTop >= container.scrollHeight / 4) {
             container.scrollTop = 0; // Reset scroll position for seamless loop
           }
         }
@@ -50,7 +50,7 @@ function Events() {
   }, [scrolling, dragging]);
 
   return (
-    <div className="flex flex-col m-5 lg:ml-auto items-center border-2 sm:w-3/4 md:w-[450px]">
+    <div className="flex flex-col m-5 lg:ml-10 items-center border-2 sm:w-3/4 md:w-[300px] lg:w-[600px]">
       {/* Tab Navigation */}
       <div className="flex w-full justify-around bg-[#07294D]">
         <h1 className="cursor-pointer px-2 py-1 sm:px-4 sm:py-2 text-base sm:text-lg font-semibold text-white">
@@ -62,6 +62,8 @@ function Events() {
       <div
         ref={scrollContainerRef}
         className="h-[50vh] md:h-[65vh] lg:h-[60vh] w-full overflow-hidden relative bg-gray-50"
+        onMouseEnter={() => setScrolling(false)}  // Stop scrolling on hover
+        onMouseLeave={() => setScrolling(true)}   // Resume scrolling on hover leave
       >
         <Draggable
           axis="y"
@@ -93,4 +95,4 @@ function Events() {
   );
 }
 
-export default Events;
+export default Announcements;
