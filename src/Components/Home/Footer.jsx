@@ -19,9 +19,9 @@ function Footer() {
                     <Socialicons />
                 </div>
             </div>
-            <div className='text-white mx-5 lg:px-5 lg:mx-5 lg:mr-16 flex flex-col md:gap-2 lg:gap-0 xl:gap-5'>
+            <div className='text-white mx-5 lg:px-5 lg:mx-5 lg:mr-16 flex flex-col md:gap-2 lg:gap-5 xl:gap-5'>
                 <h2 className='text-[18px] md:text-2xl font-opensans mb-8  lg:my-5 '>Sitemap</h2>
-                <ul className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-2 gap-y-2 mr-16 md:mr-0 lg:mt-12 xl:mt-0  text-[15px] md:text-[14px]'>
+                <ul className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-2 gap-y-2 mr-16 md:mr-0 lg:mt-0 text-[15px] md:text-[14px]'>
                     {siteMap.map((item, index) => (
                         <li className='flex h-8' key={index}>
                             <a href={item.link} className='hover:underline hover:text-[#125B9E]'>
@@ -33,7 +33,7 @@ function Footer() {
                 </ul>
             </div>
 
-            <div className='text-white mx-5 flex flex-col gap-3 md:gap-6 xl:gap-3  text-[15px] md:text-[16px] pb-12 lg:pb-0 lg:px-5 lg:mx-0 lg:w-'>
+            <div className='text-white mx-5 flex flex-col gap-3 md:gap-6 xl:gap-3  text-[15px] md:text-[16px] pb-12 lg:pb-0 lg:px-5 lg:mx-0 lg:gap-1'>
                 <h2 className='text-[18px] font-opensans my-5 md:text-2xl'>Contact Us</h2>
                 <div className='flex md:items-center lg:items-center gap-2 md:gap-3 hover:text-[#125B9E]'>
                     <Icon icon="ic:twotone-location-on" width="26" height="26" style={{ color: '#125B9E' }} className='lg:relative lg:right-1' />
