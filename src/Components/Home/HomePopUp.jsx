@@ -21,7 +21,7 @@ function HomePopUp() {
         <div className="absolute inset-0 bg-black bg-opacity-50 backdrop-blur-sm" onClick={closePopup}></div>
 
         {/* Popup Container with Slide Animation */}
-        <div className="relative mx-auto mt-12 max-w-lg p-2 lg:p-6  md:mt-16 lg:w-[450px] lg:h-[550px] lg:bg-white md:shadow-none shadow-lg rounded-md animate-slideDown">
+        <div className="relative mx-auto mt-20 max-w-lg p-2 lg:p-6  md:mt-16 lg:w-[450px] lg:h-[550px] lg:bg-white md:shadow-none shadow-lg rounded-md animate-slideDown">
           {/* Popup Image */}
           <img
             src={img}
