@@ -4,7 +4,7 @@ import logo from '../../assets/Navbar/logo3.png'; // Adjust the import path as n
 import { Icon } from '@iconify/react'; // Ensure you have this import if using Iconify
 
 const siteMap = [
-    { name: 'Home', link: '/' }, { name: 'About Us', link: '/about' }, { name: 'Courses', link: '/courses' }, { name: 'Admissions', link: '/admissions' }, { name: 'Facilities', link: '/facilities' }, { name: 'Gallery', link: '/gallery' }, { name: 'Contact Us', link: '/contact' }
+    { name: 'Home', link: '/' }, { name: 'About Us', link: '/about' }, { name: 'Academic', link: '/courses' }, { name: 'Gallery', link: '/admissions' }, { name: 'E-Journal', link: '/facilities' }, { name: 'Contact Us', link: '/gallery' }, 
 ];
 
 function Footer() {
@@ -19,9 +19,9 @@ function Footer() {
                     <Socialicons />
                 </div>
             </div>
-            <div className='text-white mx-5 lg:px-5 lg:mx-5 lg:mr-16'>
+            <div className='text-white mx-5 lg:px-5 lg:mx-5 lg:mr-16 flex flex-col md:gap-2 lg:gap-0 xl:gap-5'>
                 <h2 className='text-[18px] md:text-2xl font-opensans mb-8  lg:my-5 '>Sitemap</h2>
-                <ul className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-2 gap-y-1 mr-16 md:mr-0 lg:mt-12 xl:mt-0  text-[15px] md:text-[14px]'>
+                <ul className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-2 gap-y-2 mr-16 md:mr-0 lg:mt-12 xl:mt-0  text-[15px] md:text-[14px]'>
                     {siteMap.map((item, index) => (
                         <li className='flex h-8' key={index}>
                             <a href={item.link} className='hover:underline hover:text-[#125B9E]'>

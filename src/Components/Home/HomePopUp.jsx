@@ -21,7 +21,7 @@ function HomePopUp() {
         <div className="absolute inset-0 bg-black bg-opacity-50 backdrop-blur-sm" onClick={closePopup}></div>
 
         {/* Popup Container with Slide Animation */}
-        <div className="relative mx-auto mt-6 max-w-lg p-2 lg:p-6  md:mt-16 lg:w-[450px] lg:h-[550px] lg:bg-white md:shadow-none shadow-lg rounded-md animate-slideDown">
+        <div className="relative mx-auto mt-12 max-w-lg p-2 lg:p-6  md:mt-16 lg:w-[450px] lg:h-[550px] lg:bg-white md:shadow-none shadow-lg rounded-md animate-slideDown">
           {/* Popup Image */}
           <img
             src={img}
@@ -31,7 +31,7 @@ function HomePopUp() {
           {/* Close Button */}
           <button
             onClick={closePopup}
-            className="absolute -top-3 right-5 md:-top-8 md:right-3 font-bold text-white   hover:text-black text-md md:text-xl"
+            className="absolute -top-5 right-5 md:-top-6 md:right-16 lg:right-5 lg:-top-8 z-50 font-bold text-white text-xl   hover:text-black text-md"
           >
             X
           </button>
