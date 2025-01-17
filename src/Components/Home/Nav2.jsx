@@ -2,16 +2,17 @@ import React, { useState, useEffect } from "react";
 import logo3 from "../../assets/Navbar/logo3.png";
 import logo from "../../assets/Navbar/logo.png";
 import { Icon } from "@iconify/react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 function Nav2({text_color}) {
+  // const Navigate=useNavigate()
   const items = [
     { title: <Link to="/">Home</Link> },
-    { title: <Link to="./about">About Us</Link> },
-    { title: "Academic ", subPages: ["programs","Faculty", "Admission"] },
+    { title: <Link to="/about">About Us</Link> },
+    { title: <Link to="/academic">Academic</Link>, subPages: ["programs","Faculty", "Admission"] },
     { title: "Gallery" },
     { title: "E-Journal" },
-    { title: "Contact Us" },
+    { title: <Link to="/contact">Contact Us</Link> },
    
     
   ];
@@ -50,7 +51,7 @@ function Nav2({text_color}) {
 
   return (
     <>
-         <div className="md:relative">
+         <div className="md:relative font-Robot">
       <div
   className={`md:absolute top-0  z-50 flex justify-center gap-[8%] md:gap-[15%] md:px-10  lg:gap-[15%] xl:gap-56 lg:h-20 w-full md:py-2 items-center py-4 transition-all duration-500 ${
     isScrolled ? "bg-white shadow-md md:h-16" : "bg-white md:bg-transparent top-10"
@@ -73,7 +74,7 @@ function Nav2({text_color}) {
     className="w-[70%] md:hidden object-contain transition-all duration-500"
   />
   <ul
-    className={`hidden md:flex md:items-center gap-8 md:gap-4 lg:gap-16  md:text-[10px] md:w-fit lg:text-[12px] ${
+    className={`hidden md:flex md:items-center gap-8 md:gap-8  lg:gap-16  md:text-[11px] md:w-fit lg:text-[12px] ${
       isScrolled ? `text-[#1C315E] lg:mt-0` : `${text_color} lg:mt-[20px]`
     } lg:text-sm font-semibold `}
   >

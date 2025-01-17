@@ -21,6 +21,8 @@ export default {
       },
       fontFamily: {
         'opensans': ['Open Sans'],
+        'montserrat':['Montserrat'],
+        'Roboto':['Roboto']
       },
     },
   },

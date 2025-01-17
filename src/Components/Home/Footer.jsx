@@ -9,7 +9,7 @@ const siteMap = [
 
 function Footer() {
     return (
-        <div className='bg-[#07294C] md:px-3 lg:px-20 lg:grid lg:grid-cols-3 items-start lg:h-[14rem] lg:pl-10'>
+        <div className='bg-[#07294C] font-Roboto md:px-3 lg:px-20 lg:grid lg:grid-cols-3 items-start lg:h-[14rem] lg:pl-10'>
             <div className=' lg:ml-28 mx-8  flex flex-col gap-3 lg:gap-6 py-5  md:flex '>
                 <img src={logo} alt="logo" className='w-28 h-28 md:w-36 md:h-36 md:mx-auto xl:mx-0' />
                 {/* <p className='font-opensans text-white lg:w-  text-[15px] md:text-[16px] leading-loose '>
@@ -20,7 +20,7 @@ function Footer() {
                 </div>
             </div>
             <div className='text-white mx-5 lg:px-5 lg:mx-5 lg:mr-16 flex flex-col md:gap-2 lg:gap-5 xl:gap-5'>
-                <h2 className='text-[18px] md:text-2xl font-opensans mb-8  lg:my-5 '>Sitemap</h2>
+                <h2 className='text-[18px] md:text-2xl font-montserrat mb-8  lg:my-5 '>Sitemap</h2>
                 <ul className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-2 gap-y-2 mr-16 md:mr-0 lg:mt-0 text-[15px] md:text-[14px]'>
                     {siteMap.map((item, index) => (
                         <li className='flex h-8' key={index}>
@@ -34,7 +34,7 @@ function Footer() {
             </div>
 
             <div className='text-white mx-5 flex flex-col gap-3 md:gap-6 xl:gap-3  text-[15px] md:text-[16px] pb-12 lg:pb-0 lg:px-5 lg:mx-0 lg:gap-1'>
-                <h2 className='text-[18px] font-opensans my-5 md:text-2xl'>Contact Us</h2>
+                <h2 className='text-[18px] font-montserrat my-5 md:text-2xl'>Contact Us</h2>
                 <div className='flex md:items-center lg:items-center gap-2 md:gap-3 hover:text-[#125B9E]'>
                     <Icon icon="ic:twotone-location-on" width="26" height="26" style={{ color: '#125B9E' }} className='lg:relative lg:right-1' />
                     <a href='https://maps.app.goo.gl/NqfMLeiHFmS8kPdr8' className=' w-4/5 md:w-2/4 lg:w-full md:text-[14px]'>KBA Arabic College, Crescent Campus, Vandalur, Chennai - 600 048</a>
@@ -46,7 +46,7 @@ function Footer() {
                         <a href="tel:+914422751282" className='hover:underline'>+91-44-22751282</a>
                     </div>
                 </div>
-                <div className='flex items-center gap-3 md:gap-4 hover:text-[#125B9E] md:text-[14px]'>
+                <div className='flex items-center gap-3 md:gap-4 lg:gap-5 hover:text-[#125B9E] md:text-[14px]'>
                     <Icon icon="ic:baseline-mail-outline" width="20" height="20" style={{ color: '#125B9E' }} />
                     <a href="mailto:office.kbacollege@gmail.com">office.kbacollege@gmail.com</a>
                 </div>
