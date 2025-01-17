@@ -4,7 +4,7 @@ import logo from '../../assets/Navbar/logo3.png'; // Adjust the import path as n
 import { Icon } from '@iconify/react'; // Ensure you have this import if using Iconify
 
 const siteMap = [
-    { name: 'Home', link: '/' }, { name: 'About Us', link: '/about' }, { name: 'Academic', link: '/courses' }, { name: 'Gallery', link: '/admissions' }, { name: 'E-Journal', link: '/facilities' }, { name: 'Contact Us', link: '/gallery' }, 
+    { name: 'Home', link: '/' }, { name: 'About Us', link: '/about' }, { name: 'Academic', link: '/academic' }, { name: 'Gallery', link: '/admissions' }, { name: 'E-Journal', link: '/facilities' }, { name: 'Contact Us', link: '/contact' }, 
 ];
 
 function Footer() {
