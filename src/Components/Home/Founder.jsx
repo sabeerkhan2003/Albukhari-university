@@ -5,6 +5,9 @@ import Admission_button from './Admission_button';
 
 
 function Founder() {
+
+  const Founder_msg=["Kilakarai Bukhari Aalim Arabic College, established in 2000 by Alhaj Dr. B.S. Abdur Rahman, was founded with the vision of blending Islamic studies with modern education. Our unique 5-year integrated program enables students to earn dual degrees in Islamic studies and business management. We aim to cultivate scholars who excel in both religious knowledge and modern sciences, empowering them to bring positive change to society. With a commitment to quality education, we aspire to create leaders who will uphold the values of the Quran and Sunnah while contributing to the betterment of humanity."]
+
   const [isClicked, setIsClicked] = useState(false);
   const handleClick = () => {
     setIsClicked(true);
@@ -34,11 +37,12 @@ function Founder() {
 
         <h1 className='text-[30px] font-sans text-[#252525] font-bold'>Founder's Message</h1>
         <p className='text-[#6B6B6B] text-[15px] font-medium   '>
-          Since its humble beginning in 1978 as a college of Islamic studies and Orphanage, Jamia Markaz (The Markaz Academia) has gradually grown to become the flagship of Islamic and modern education for the Muslims in India, which later took a decisive role in shaping an ideal culture for them by creatively blending education, charity and national consciousness. People from all walks of life, the elite, the poor, the educated and the common man, joined Markaz in its progressive journey of social change.</p><br />
-        <h2 className='text-[24px] font-semibold'>H.E. Sheikh Abubakr Ahmad</h2>
-        <h4 className='text-[15px] text-[#6B6B6B] font-bold'>Founder of Markazu Saquafathi Sunniyya</h4>
+         {Founder_msg}</p><br />
+        <h2 className='text-[24px] font-semibold'>Alhaj Dr. B.S. Abdur Rahman</h2>
+        <h4 className='text-[15px] text-[#6B6B6B] font-bold'>Founder, Kilakarai Bukhari Aalim Arabic College</h4>
         <div></div>
-        <Admission_button name={"About"} />
+        <Link to="/about" ><Admission_button name={"About"} /></Link>
+       
       </div>
     </div>
   </>

@@ -6,6 +6,7 @@ import Methods from '../Components/Contact/Methods'
 import DirectContacts from '../Components/Contact/DirectContacts'
 import Map from '../Components/Contact/Map'
 import Footer from '../Components/Home/Footer'
+import Logos from '../Components/Home/Logos'
 
 function Contact() {
   return (
@@ -22,6 +23,7 @@ function Contact() {
      <DirectContacts/>
      <Map/>
       </div>
+      <Logos/>
       <Footer/>
       </>
     </>

@@ -2,6 +2,7 @@ import React from 'react';
 import Nav from '../Components/Home/Nav';
 import Nav2 from '../Components/Home/Nav2';
 import Footer from "../Components/Home/Footer"
+import Logos from "../Components/Home/Logos"
 import book1 from "../assets/Academic/book1.jpg";
 import book2 from "../assets/Academic/book2.jpg";
 import book3 from "../assets/Academic/book3.png";
@@ -48,6 +49,7 @@ function Academic() {
           ))}</div>
         </div>
       </div>
+      <Logos/>
       <Footer />
     </>
   );

@@ -2,6 +2,9 @@ import React from 'react'
 import Founder from '../Components/Home/Founder'
 import Nav from '../Components/Home/Nav'
 import Nav2 from '../Components/Home/Nav2'
+import Hero from '../Components/Home/Hero'
+import Logos from '../Components/Home/Logos'
+import Footer from '../Components/Home/Footer'
 
 function AboutUs() {
   return (
@@ -11,8 +14,12 @@ function AboutUs() {
       </div>
       <Nav />
       <div className='md:pt-32 h-[100vh]'>
-        <Founder/>
+        {/* <Founder/> */}
+        <Hero/>
+        <Logos/>
+        <Footer/>
         </div>
+      
     </>
   )
 }

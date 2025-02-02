@@ -13,8 +13,7 @@ function Nav2({text_color}) {
     { title: "Gallery" },
     { title: "E-Journal" },
     { title: <Link to="/contact">Contact Us</Link> },
-   
-    
+     
   ];
 
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
