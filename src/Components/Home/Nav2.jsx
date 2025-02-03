@@ -10,8 +10,8 @@ function Nav2({text_color}) {
     { title: <Link to="/">Home</Link> },
     { title: <Link to="/about">About Us</Link> },
     { title: <Link to="/academic">Academic</Link>, subPages: ["programs","Faculty", "Admission"] },
-    { title: "Gallery" },
-    { title: "E-Journal" },
+    { title: <Link to="/gallery">Gallery</Link> },
+    { title: <Link to="/journal">E-Journal</Link> },
     { title: <Link to="/contact">Contact Us</Link> },
      
   ];

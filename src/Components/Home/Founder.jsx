@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import founder from "../../assets/hero/main.jpeg"
 import { Link } from 'react-router-dom';
-import Admission_button from './Admission_button';
+import Button from '../ui/Button';
 
 
 function Founder() {
@@ -41,7 +41,7 @@ function Founder() {
         <h2 className='text-[24px] font-semibold'>Alhaj Dr. B.S. Abdur Rahman</h2>
         <h4 className='text-[15px] text-[#6B6B6B] font-bold'>Founder, Kilakarai Bukhari Aalim Arabic College</h4>
         <div></div>
-        <Link to="/about" ><Admission_button name={"About"} /></Link>
+        <Link to="/about" ><Button name={"About"} /></Link>
        
       </div>
     </div>

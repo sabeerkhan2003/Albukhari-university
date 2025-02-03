@@ -31,7 +31,7 @@ const DirectContacts = () => {
       <div className="bg-white rounded-lg shadow-2xl font-montserrat w-[100%]   pb-10">
         <div className="p-6">
         <h2 className="text-[#07294D] text-xl font-semibold pt-6">Direct Contacts:</h2>
-        <div className="mt-3 w-10 border-2 border-yellow-400"></div></div>
+        <div className="mt-3 w-10 border-2 border-[#1C315E]"></div></div>
         <div className="mt-6 mx-5 space-y-8">
           {contacts.map((contact, index) => (
             <div key={index} className="space-y-2">

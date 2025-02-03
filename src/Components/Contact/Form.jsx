@@ -9,7 +9,7 @@ function Form() {
         <h2 className="text-[#1C315E] text-sm font-semibold tracking-wide font-montserrat">
           Contact Us
         </h2>
-        <div className="mt-1 w-10 border-2 border-yellow-400 lg:text-[18px]"></div>
+        <div className="mt-1 w-10 border-2 border-[#1C315E] lg:text-[18px]"></div>
         <h1 className="text-3xl font-bold text-gray-900 mt-4 lg:text-[48px] font-montserrat pt-2 pb-5">Keep in touch</h1>
         <form className="mt-6">
           <div className="flex gap-4">
@@ -49,7 +49,7 @@ function Form() {
           </div>
           <button
             type="submit"
-            className="mt-4 w-fit bg-yellow-400 px-8 py-2 font-semibold rounded-md font-montserrat hover:bg-yellow-500 focus:outline-none "
+            className="mt-4 w-fit bg-[#1C315E] px-8 py-2 text-white font-semibold rounded-md font-montserrat hover:bg-yellow-500 focus:outline-none "
           >
             Send
           </button>

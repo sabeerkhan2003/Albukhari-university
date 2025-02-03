@@ -13,6 +13,7 @@ import Image6 from "../../assets/Image_slider/read.jpeg";
 import Image7 from "../../assets/Image_slider/sports.jpeg";
 import Image8 from "../../assets/Image_slider/library.jpeg";
 import Nav2 from "./Nav2";
+import ApplyNowButton from "../ui/ApplyButton";
 
 export function Bg_Carousel() {
   const [images, setImages] = useState([
@@ -28,7 +29,12 @@ export function Bg_Carousel() {
 
   return (
     <>
-      <div className="h-[100%] w-full bg-gradient-to-b from-blue-500 to-blue-400 opacity-90 mix-blend-multiply">
+      <div className="h-[100%] w-full bg-gradient-to-b from-blue-400 to-blue-500 opacity-100 mix-blend-multiply relative ">
+        
+      <p className="font-bold lg:text-5xl w-fit   mx-auto absolute xl:top-[35%] text-white z-30 brightness-200 font-opensans text-3xl top-10 left-[31%] md:left-[32%] md:top-[27%] lg:top-[38%] lg:left-[25%] xl:left-[30%]">Admissions <span className="font-opensans font-bold w-fit  md:text-blue-900">Open 2025</span></p>
+      <span className="font-opensans font-bold lg:text-3xl w-fit   mx-auto absolute xl:top-[35%] xl:left-[40%] text-red-500 z-30 brightness-200 text-2xl  top-20 left-[37%] md:left-[45%] md:top-[33%] md:hidden">Open 2025</span>              
+      <p className="font-bold text-3xl w-fit my-2  mx-auto absolute top-[48%]  left-[38%] text-white z-30 md:left-[46%] md:top-[32%] lg:top-[48%] xl:left-[45%]"><ApplyNowButton/></p>
+           
       <div className=" opacity-90 ">
         <ImagesSlider className="h-60 md:h-[45rem]" images={images}>
           <motion.div
@@ -47,6 +53,7 @@ export function Bg_Carousel() {
           >
             {/* Add content here if needed */}
           </motion.div>
+          
         </ImagesSlider>
       </div>
       </div>

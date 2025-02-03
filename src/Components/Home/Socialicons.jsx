@@ -8,12 +8,19 @@ function Socialicons() {
   const [isLinkedInHovered, setIsLinkedInHovered] = useState(false);
   const [isInstagramHovered, setIsInstagramHovered] = useState(false);
 
+  // Function to handle redirection
+  const handleRedirect = (url) => {
+    window.location.href = url;
+  };
+
   return (
     <section className="flex justify-center gap-4 z-20 bg-[#07294D] items-center lg:h-fit h-12 relative bottom-0 w-full">
-      {/* Facebook Icon with Hover Effect */}
+      {/* Facebook Icon */}
       <div
         onMouseEnter={() => setIsFacebookHovered(true)}
         onMouseLeave={() => setIsFacebookHovered(false)}
+        onClick={() => handleRedirect("https://www.facebook.com/login")}
+        className="cursor-pointer"
       >
         {isFacebookHovered ? (
           <Icon icon="logos:facebook" className="h-[28px] w-[28px] lg:h-[25px] lg:w-[25px]" />
@@ -25,47 +32,53 @@ function Socialicons() {
         )}
       </div>
 
-      {/* YouTube Icon with Hover Effect */}
+      {/* YouTube Icon */}
       <div
         onMouseEnter={() => setIsYouTubeHovered(true)}
         onMouseLeave={() => setIsYouTubeHovered(false)}
+        onClick={() => handleRedirect("https://www.youtube.com/account")}
+        className="cursor-pointer"
       >
         {isYouTubeHovered ? (
-          <Icon icon="logos:youtube-icon" className="h-[28px] w-[28px] lg:h-[25px] lg:w-[25px]" />
+          <Icon icon="logos:youtube-icon" className="h-[28px] w-[28px] lg:h-[25px] lg:w-[24px] bg-[#FF0000] rounded-full" />
         ) : (
           <Icon
             icon="entypo-social:youtube-with-circle"
-            className="h-[28px] w-[28px] lg:h-[23px] lg:w-[28px] text-white rounded-full"
+            className="h-[28px] w-[28px] lg:h-[25px] lg:w-[24px] text-white rounded-full"
           />
         )}
       </div>
 
-      {/* LinkedIn Icon with Hover Effect */}
+      {/* LinkedIn Icon */}
       <div
         onMouseEnter={() => setIsLinkedInHovered(true)}
         onMouseLeave={() => setIsLinkedInHovered(false)}
+        onClick={() => handleRedirect("https://www.linkedin.com/login")}
+        className="cursor-pointer"
       >
         {isLinkedInHovered ? (
-          <Icon icon="skill-icons:linkedin" className="h-[28px] w-[28px] lg:h-[25px] lg:w-[25px]" />
+          <Icon icon="skill-icons:linkedin" className="h-[28px] w-[28px] lg:h-[25px] lg:w-[25px] rounded-full" />
         ) : (
           <Icon
             icon="entypo-social:linkedin-with-circle"
-            className="h-[28px] w-[28px] lg:h-[23px] lg:w-[28px] text-white rounded-full"
+            className="h-[28px] w-[28px] lg:h-[25px] lg:w-[25px] text-white rounded-full"
           />
         )}
       </div>
 
-      {/* Instagram Icon with Hover Effect */}
+      {/* Instagram Icon */}
       <div
         onMouseEnter={() => setIsInstagramHovered(true)}
         onMouseLeave={() => setIsInstagramHovered(false)}
+        onClick={() => handleRedirect("https://www.instagram.com/accounts/login")}
+        className="cursor-pointer"
       >
         {isInstagramHovered ? (
-          <Icon icon="skill-icons:instagram" className="h-[28px] w-[28px] lg:h-[25px] lg:w-[25px]" />
+          <Icon icon="skill-icons:instagram" className="h-[28px] w-[28px] lg:h-[25px] lg:w-[25px] rounded-full" />
         ) : (
           <Icon
             icon="entypo-social:instagram-with-circle"
-            className="h-[28px] w-[28px] lg:h-[23px] lg:w-[28px] text-white rounded-full"
+            className="h-[28px] w-[28px] lg:h-[25px] lg:w-[25px] text-white rounded-full"
           />
         )}
       </div>

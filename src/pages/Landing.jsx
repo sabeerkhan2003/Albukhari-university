@@ -8,8 +8,8 @@ import Founder from '../Components/Home/Founder';
 import Footer from '../Components/Home/Footer';
 import Logos from '../Components/Home/Logos';
 import EventsSlider from '../Components/Home/Eventslider';
-import Admission_button from '../Components/Home/Admission_button';
 import HomePopUp from '../Components/Home/HomePopUp';
+import Button from '../Components/ui/Button';
 
 
 function Landing() {
@@ -26,7 +26,7 @@ function Landing() {
       <Nav />
       <Bg_Carousel />
       <div className='flex justify-center py-14'>
-      <Admission_button name={"Online Admissions"} />
+      <Button name={"Online Admissions"} />
       </div>
       <Founder />
       <Hero />
