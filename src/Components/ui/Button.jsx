@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 const Button = ({name}) => {
   return (
     <motion.button
-      className="relative px-4 py-3  border lg:px-6 lg:py-3 bg-[#07294D] text-white font-semibold text-md rounded-lg shadow-lg overflow-hidden group"
+      className="relative px-4 py-3  border lg:px-6 lg:py-3 bg-[#07294D] text-white font-semibold text-md rounded-lg md:rounded-3xl shadow-lg overflow-hidden group"
     >
       {/* Background Hover Effect */}
       <motion.span

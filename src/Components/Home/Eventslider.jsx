@@ -3,7 +3,7 @@ import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import Announcements from './Announcements';
-import img from "../../assets/Events/Event2.png";
+import img from "../../assets/Events/Event1.png";
 
 const EventSlider = () => {
   const events = [
@@ -61,13 +61,12 @@ const EventSlider = () => {
       {/* Slider Section */}
       <Slider {...settings} className="w-full md:w-96 mx-auto [&_.slick-dots]:mt-2 [&_.slick-dots>li]:-mx-1">
         {events.map((event, index) => (
-          <div key={index} className="event-slide  flex flex-col items-center border ">
+          <div key={index} className="event-slide p-6 bg-gray-100  flex flex-col items-center border ">
             <img src={event.image} alt={event.name} className="h-64 object-cover mx-auto md:mx-0 rounded-t-xl  mb-4 relative" />
-            <div className='absolute top-20 ml-2 '>
+            <div></div>
             <h3 className="text-lg font-bold text-gray-800 mb-2">{event.name}</h3>
             <h4 className="text-sm text-gray-500 mb-2">{event.role}</h4>
-            <p className="text-sm text-gray-600 text-center w-[320px]">{event.description}</p>
-            </div>
+            <p className="text-sm text-gray-600 text-center">{event.description}</p>
           </div>
         ))}
       </Slider>

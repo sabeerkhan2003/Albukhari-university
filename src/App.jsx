@@ -6,6 +6,7 @@ import Academic from './pages/Academic';
 import Contact from './pages/Contact';
 import Gallery from './pages/Gallery';
 import Ejournal from './pages/E-Journal';
+import Faculties from './pages/Faculties';
 
 function App() {
  
@@ -21,6 +22,7 @@ function App() {
         <Route path="/contact" element={<Contact/>} />
         <Route path="/gallery" element={<Gallery/>} />
         <Route path="/journal" element={<Ejournal/>} />
+        <Route path="/faculty" element={<Faculties/>} />
       </Routes>
     </Router>
      
