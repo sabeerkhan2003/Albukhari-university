@@ -25,7 +25,7 @@ function Landing() {
 
       <Nav />
       <Bg_Carousel />
-      <div className='flex justify-center py-14'>
+      <div className='flex justify-center pt-14'>
       <Button name={"Online Admissions"} />
       </div>
       <Founder />

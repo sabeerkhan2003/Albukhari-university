@@ -3,39 +3,40 @@ import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import Announcements from './Announcements';
+import img from "../../assets/Events/Event2.png";
 
 const EventSlider = () => {
   const events = [
     {
-      image: "https://via.placeholder.com/150",
+      image: img,
       name: "BSA ARIF BUHARY RAHMAN",
       role: "President",
       description:
         "The higher education landscape is changing in tandem with the economic situations, industry requirements, and technological development globally...",
     },
     {
-      image: "https://via.placeholder.com/150",
+      image: img,
       name: "John Doe",
       role: "CEO",
       description:
         "Education is a transformative process that empowers individuals to achieve their potential and contribute to society...",
     },
     {
-      image: "https://via.placeholder.com/150",
+      image: img,
       name: "Jane Smith",
       role: "Director",
       description:
         "The importance of accessibility in education cannot be overstated as we move towards a more connected world...",
     },
     {
-      image: "https://via.placeholder.com/150",
+      image: img,
       name: "Alice Johnson",
       role: "Manager",
       description:
         "Our vision is to create a sustainable and inclusive education system that meets the challenges of the 21st century...",
     },
     {
-      image: "https://via.placeholder.com/150",
+      image: img,
       name: "Michael Smith",
       role: "Advisor",
       description:
@@ -60,11 +61,13 @@ const EventSlider = () => {
       {/* Slider Section */}
       <Slider {...settings} className="w-full md:w-96 mx-auto [&_.slick-dots]:mt-2 [&_.slick-dots>li]:-mx-1">
         {events.map((event, index) => (
-          <div key={index} className="event-slide p-6 bg-white flex flex-col items-center">
-            <img src={event.image} alt={event.name} className="w-32 h-32 object-cover mx-auto md:mx-0 rounded-full mb-4" />
+          <div key={index} className="event-slide  flex flex-col items-center border ">
+            <img src={event.image} alt={event.name} className="h-64 object-cover mx-auto md:mx-0 rounded-t-xl  mb-4 relative" />
+            <div className='absolute top-20 ml-2 '>
             <h3 className="text-lg font-bold text-gray-800 mb-2">{event.name}</h3>
             <h4 className="text-sm text-gray-500 mb-2">{event.role}</h4>
-            <p className="text-sm text-gray-600 text-center">{event.description}</p>
+            <p className="text-sm text-gray-600 text-center w-[320px]">{event.description}</p>
+            </div>
           </div>
         ))}
       </Slider>
