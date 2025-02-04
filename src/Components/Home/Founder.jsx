@@ -36,10 +36,10 @@ function Founder() {
       <div className='flex flex-col gap-2 md:w-3/4'>
 
         <h1 className='text-[30px] font-sans text-[#252525] font-bold'>Founder's Message</h1>
-        <p className='text-[#6B6B6B] text-[15px] font-medium   '>
+        <p className='text-[#6B6B6B] text-[16px] font-Roboto  '>
          {Founder_msg}</p><br />
         <h2 className='text-[24px] font-semibold'>Alhaj Dr. B.S. Abdur Rahman</h2>
-        <h4 className='text-[15px] text-[#6B6B6B] font-bold'>Founder, Kilakarai Bukhari Aalim Arabic College</h4>
+        <h4 className='text-[15px] text-[#6B6B6B] font-semibold'>Founder, Kilakarai Bukhari Aalim Arabic College</h4>
         <div></div>
         <Link to="/about" ><Button name={"About"} /></Link>
        

@@ -5,6 +5,7 @@ import Nav2 from '../Components/Home/Nav2'
 import Hero from '../Components/Home/Hero'
 import Logos from '../Components/Home/Logos'
 import Footer from '../Components/Home/Footer'
+import Button from '../Components/ui/Button'
 
 function AboutUs() {
   return (
@@ -16,6 +17,10 @@ function AboutUs() {
       <div className='md:pt-32 h-[100vh]'>
         {/* <Founder/> */}
         <Hero/>
+        <div className='m-6 md:mx-auto w-fit'>
+        <Button name={"view more"}/>
+        </div>
+        
         <Logos/>
         <Footer/>
         </div>

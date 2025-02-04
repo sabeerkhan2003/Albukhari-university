@@ -43,7 +43,7 @@ const heroContent = {
 function Hero() {
     return (
         <>
-            <div className='flex mx-5 lg:mx-14 -mt-16 font-opensans md:mt-0 md:gap-10 md:text-[14px] lg:text-[16px] lg:mt-[2%] pt-10'>
+            <div className='flex mx-5 lg:mx-14 -mt-16  text-lg font-Roboto text-[#6B6B6B]   md:mt-0 md:gap-10 md:text-[14px] lg:text-[16px] lg:mt-[2%] pt-10'>
                 <div>
                     {/* <img
                         src={heroContent.intro.image}
@@ -63,7 +63,7 @@ function Hero() {
                         
                     ))}
 
-                    <div className='md:hidden  lg:text-[16px] lg:block'>
+                    <div className='md:hidden  lg:text-[16px]  lg:block'>
                         <h2 className='font-semibold mt-10 text-lg'>{heroContent.vision.title}</h2>
                         <p className='mt-2 lg:leading-relaxed'>{heroContent.vision.description}</p>
 
@@ -79,7 +79,7 @@ function Hero() {
 
             </div>
 
-            <div className='hidden md:block lg:hidden xl:hidden md:mx-5 lg:mx-14 md:text-[14px] lg:text-[16px] md:leading-relaxed'>
+            <div className='hidden md:block lg:hidden xl:hidden md:mx-5  lg:mx-14 md:text-[14px] lg:text-[16px] md:leading-relaxed'>
                 <h2 className='font-semibold text-lg '>{heroContent.vision.title}</h2>
                 <p className='mt-2 lg:leading-relaxed md:leading-relaxed'>{heroContent.vision.description}</p>
 
@@ -92,7 +92,7 @@ function Hero() {
                 </ul>
             </div>
 
-            <div className='lg:mx-14 md:mx-5 mx-5 md:text-[14px] lg:text-[16px] md:leading-relaxed'>
+            <div className='lg:mx-14 md:mx-5 mx-5 md:text-[14px] lg:text-[16px] md:leading-relaxed font-Roboto text-[#6B6B6B]   '>
                 <h2 className='font-semibold mt-10 text-lg md:leading-relaxed'>{heroContent.facilities.title}</h2>
                 <p className='mt-2 md:leading-relaxed'>{heroContent.facilities.description}</p>
 

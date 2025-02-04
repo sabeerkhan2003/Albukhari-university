@@ -83,7 +83,7 @@ const EventSlider = () => {
   };
 
   return (
-    <div className='flex flex-col md:flex-row justify-center items-center gap-8 lg:gap-16 xl:gap-20 mx-5 lg:mx-28 my-10 md:my-16 lg:my-20'>
+    <div className='flex flex-col md:flex-row justify-center items-center gap-20 md:gap-5 lg:gap-16 xl:gap-20 mx-5 lg:mx-28 my-10 md:my-16 lg:my-20'>
       {/* Slider Section */}
       <div className="w-full md:w-1/2 md:mt-5 lg:mt-0 flex flex-col items-center text-center md:text-start relative">
         <h1 className="cursor-pointer text-xl font-opensans text-blue-950 px-2 py-1 sm:px-4 sm:py-2 sm:text-lg font-bold">

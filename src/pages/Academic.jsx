@@ -7,6 +7,7 @@ import book1 from "../assets/Academic/book1.jpg";
 import book2 from "../assets/Academic/book2.jpg";
 import book3 from "../assets/Academic/book3.png";
 import Button from '../Components/ui/Button';
+import { Link } from 'react-router-dom';
 
 const programs = [
   {
@@ -50,8 +51,8 @@ function Academic() {
           ))}</div>
         </div>
         <div className='flex flex-col justify-center items-center py-20'>
-      <Button name={"Faculty"}/> <br />
-      <Button name={"Admissions"}/>
+      <Link to="/faculty"><Button name={"Faculty"}/> </Link><br />
+      <Link to="/admission"><Button name={"Admissions"}/></Link>
       </div>
       </div>
      

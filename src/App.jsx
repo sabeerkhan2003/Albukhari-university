@@ -7,6 +7,7 @@ import Contact from './pages/Contact';
 import Gallery from './pages/Gallery';
 import Ejournal from './pages/E-Journal';
 import Faculties from './pages/Faculties';
+import Admission from './pages/Admission';
 
 function App() {
  
@@ -19,10 +20,12 @@ function App() {
         <Route path="/" element={<Landing/>} />
         <Route path="/about" element={<AboutUs/>} />
         <Route path="/academic" element={<Academic/>} />
+        <Route path="/programs" element={<Academic/>} />
         <Route path="/contact" element={<Contact/>} />
         <Route path="/gallery" element={<Gallery/>} />
         <Route path="/journal" element={<Ejournal/>} />
         <Route path="/faculty" element={<Faculties/>} />
+        <Route path="/admission" element={<Admission/>} />
       </Routes>
     </Router>
      
