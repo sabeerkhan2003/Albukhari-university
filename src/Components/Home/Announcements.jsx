@@ -50,9 +50,9 @@ function Announcements() {
   }, [scrolling, dragging]);
 
   return (
-    <div className="flex flex-col m-5 lg:ml-10 items-center border-2 sm:w-3/4 md:w-[300px] lg:w-[500px]">
+    <div className="flex flex-col m-5  items-center border rounded-t-2xl sm:w-3/4 md:w-[300px] lg:w-[450px] xl:w-[90%] ">
       {/* Tab Navigation */}
-      <div className="flex w-full justify-around bg-[#07294D]">
+      <div className="flex w-full justify-around bg-[#07294D] rounded-t-2xl">
         <h1 className="cursor-pointer px-2 py-1 sm:px-4 sm:py-2 text-base sm:text-lg font-semibold text-white">
           Announcements
         </h1>
@@ -61,7 +61,7 @@ function Announcements() {
       {/* Tab Content */}
       <div
         ref={scrollContainerRef}
-        className="h-[50vh] md:h-[65vh] lg:h-[60vh] w-full overflow-hidden relative bg-gray-50"
+        className="h-[50vh] md:h-[75vh] xl:h-[65vh] w-full overflow-hidden relative bg-gray-50"
         onMouseEnter={() => setScrolling(false)}  // Stop scrolling on hover
         onMouseLeave={() => setScrolling(true)}   // Resume scrolling on hover leave
       >
