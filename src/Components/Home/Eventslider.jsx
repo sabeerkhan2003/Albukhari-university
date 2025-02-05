@@ -86,14 +86,14 @@ const EventSlider = () => {
     <div className='flex flex-col md:flex-row justify-center items-center gap-20 md:gap-5 lg:gap-16 xl:gap-20 mx-5 lg:mx-28 my-10 md:my-16 lg:my-20'>
       {/* Slider Section */}
       <div className="w-full md:w-1/2 md:mt-5 lg:mt-0 flex flex-col items-center text-center md:text-start relative">
-        <h1 className="cursor-pointer text-xl font-opensans text-blue-950 px-2 py-1 sm:px-4 sm:py-2 sm:text-lg font-bold">
+        <h1 className="cursor-pointer text-xl font-opensans text-blue-950 px-2 py-1 sm:px-4 xl:text-[1.5rem] sm:py-2 sm:text-lg font-bold">
           Events
         </h1>
         <Slider {...settings} className="w-full xl:w-3/4  xl:h- mx-auto  [&_.slick-dots]:mt-2 [&_.slick-dots>li]:-mx-1">
           {events.map((event, index) => (
             <div key={index} className="event-slide rounded-t-xl bg-gray-100 rounded-xl flex flex-col items-center justify-center">
-              <img src={event.image} alt={event.name} className="h-60 xl:h-64 w-[100%] object-fill flex justify-center rounded-t-xl mb-4" />
-              <div className="p-6 rounded-xl rounded-t-none">
+              <img src={event.image} alt={event.name} className="h-60 xl:h-[40vh] w-[100%] object-fill flex justify-center rounded-t-xl mb-4" />
+              <div className="p-6 rounded-xl xl:h-[25vh] rounded-t-none">
                 <h3 className="text-lg text-center font-bold text-gray-800 mb-2">{event.name}</h3>
                 <h4 className="text-sm text-center text-gray-500 mb-2">{event.role}</h4>
                 <p className="text-sm text-gray-600 text-center">{event.description}</p>
