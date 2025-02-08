@@ -14,7 +14,7 @@ function AboutUs() {
         <Nav2 text_color={"text-[#1C315E]"}/>
       </div>
       <Nav />
-      <div className='md:pt-32 h-[100vh]'>
+      <div className='md:pt-32'>
         {/* <Founder/> */}
         <Hero/>
         <div className='m-6 md:mx-auto w-fit'>
